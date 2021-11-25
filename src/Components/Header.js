@@ -1,6 +1,10 @@
 import logo from "../Images/logo.png"
+import {useDispatch} from "react-redux";
+import {setTheme} from '../Redux/Actions';
 
 const Header = () => {
+    const dispatch = useDispatch();
+
     return (
       <header>
           <div className="container">
@@ -8,6 +12,7 @@ const Header = () => {
                   <img src={logo} alt=""/>
               </div>
               <div className="title">Купи хлеб</div>
+              <div className="theme-btn" onClick={() => dispatch(setTheme())}></div>
           </div>
       </header>
     );

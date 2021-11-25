@@ -39,3 +39,8 @@ export function deleteDoneItems() {
         type: 'DELETE_DONE_ITEMS',
     }
 }
+export function setTheme() {
+    return {
+        type: 'SET_THEME',
+    }
+}

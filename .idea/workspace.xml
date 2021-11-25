@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3607581a-1820-431c-a233-6c6f78a49d4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/localStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/localStorage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,12 +51,12 @@
     <property name="ts.external.directory.path" value="D:\Projects\buy-bread\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\buy-bread\public" />
-      <recent name="D:\Projects\buy-bread\src\Images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\buy-bread\src\Styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\buy-bread\src\Images" />
+      <recent name="D:\Projects\buy-bread\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,7 +113,8 @@
       <workItem from="1637568512521" duration="60000" />
       <workItem from="1637775571883" duration="11936000" />
       <workItem from="1637828512197" duration="1056000" />
-      <workItem from="1637854496268" duration="847000" />
+      <workItem from="1637854496268" duration="12011000" />
+      <workItem from="1637871144796" duration="940000" />
     </task>
     <servers />
   </component>

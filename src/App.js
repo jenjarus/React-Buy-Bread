@@ -13,15 +13,16 @@ import './Styles/styles.scss';
 const App = () => {
     const inputEdit = useSelector((store) => store.inputEdit);
     const idEdit = useSelector((store) => store.idEdit);
+    const themeDark = useSelector((store) => store.themeDark);
     const [viewEdit, setViewEdit] = useState(false);
-
+    const theme = themeDark === true ? ' theme-dark' : '';
 
     useEffect(() => {
         setViewEdit(inputEdit);
     }, [inputEdit, idEdit]);
 
     return (
-        <div className="body">
+        <div className={"body" + theme}>
             <Header/>
             {viewEdit ? <InputEditProduct/> : <InputProduct/>}
             <ListProducts/>
