@@ -66,6 +66,11 @@ export default function reducer(state = initialState, action) {
                 inputEdit: action.id === state.idEdit ? false : state.inputEdit,
                 idEdit: action.id === state.idEdit ? 0 : state.idEdit,
             };
+        case 'DELETE_DONE_ITEMS':
+            return {
+                ...state,
+                items: [...state.items.filter(item => item.done !== true)],
+            };
         default:
             return state;
     }

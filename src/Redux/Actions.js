@@ -34,3 +34,8 @@ export function deleteItem(id) {
         id: id,
     }
 }
+export function deleteDoneItems() {
+    return {
+        type: 'DELETE_DONE_ITEMS',
+    }
+}
