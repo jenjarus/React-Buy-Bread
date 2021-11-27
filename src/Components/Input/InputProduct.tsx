@@ -1,5 +1,6 @@
-import {useRef, useState} from "react";
+import React, {useRef, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
+import {IDataProducts, IState} from "../../Types/Types";
 import {setEditProductItem, setItem, setProductItem} from '../../Redux/Actions';
 
 import InputColorList from './Color/InputColorList';
@@ -8,14 +9,14 @@ import InputNameProductList from './NameProduct/InputNameProductList';
 const InputProduct = () => {
     const dispatch = useDispatch();
 
-    const products = useSelector((store) => store.products); // Список сохраненных названий продуктов
+    const products: IDataProducts[] = useSelector((store: IState) => store.products); // Список сохраненных названий продуктов
 
     const [input, setInput] = useState('');
     const [color, setColor] = useState('transparent');
 
-    const inputRef = useRef();
+    const inputRef = useRef<HTMLInputElement>(null);
 
-    const addItem = () => {
+    const addItem = (): void => {
         let newText = input.replace(/\s+/g, ' ');
         newText = newText.trim();
 
@@ -42,38 +43,40 @@ const InputProduct = () => {
         }
     };
 
-    const clickEnter = (e) => {
-        if (e.keyCode === 13) {
+    const clickEnter = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+        if (e.code === 'Enter') {
             addItem();
         }
     };
 
     // Вставка сохраненного названия продукта
-    const setProduct = (id) => {
+    const setProduct = (id: number): void => {
         const product = products.find(el => el.id === id);
-        setInput(product.name);
-        setColor(product.color);
-        inputRef.current.focus();
+        setInput(product!.name);
+        setColor(product!.color);
+        if(inputRef && inputRef.current) {
+            inputRef.current.focus();
+        }
     };
 
     // Проверка на наличие сохраненного названия продукта
-    const compareInputProduct = () => {
+    const compareInputProduct = (): boolean => {
         const product = products.filter((a) => a.name === input);
         return product.length !== 0;
     };
 
     // id сохраненного названия продукта
-    const idEditProduct = () => {
+    const idEditProduct = (): number => {
         const product = products.filter((a) => a.name === input);
         return product[0].id;
     };
 
     // Изменение объекта сохраненного названия продукта
-    const editProduct = (text) => {
+    const editProduct = (text: string): IDataProducts => {
         const product = products.find((a) => a.name === input);
         return {
-            id: product.id,
-            count: ++product.count,
+            id: product!.id,
+            count: ++product!.count,
             color: color,
             name: text,
         };

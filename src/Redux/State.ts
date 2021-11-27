@@ -1,9 +1,10 @@
 import {createStore} from "redux";
+import {IState} from "../Types/Types"
 
 import {loadState, saveState} from './localStorage';
 import reducer from "./Reducer";
 
-const initialState = {
+export const initialState: IState = {
     items: [
         {
             id: 1,
@@ -79,7 +80,7 @@ const initialState = {
 const items = loadState('items');
 const products = loadState('products');
 const theme = loadState('themeDark');
-const state = Object.assign(initialState, items, products, theme);
+const state: IState = Object.assign(initialState, items, products, theme);
 
 const store = createStore(
     reducer,

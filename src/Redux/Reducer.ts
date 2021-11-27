@@ -1,4 +1,7 @@
-export default function reducer(state, action) {
+import {initialState} from "./State";
+import {IState, IAction} from "../Types/Types";
+
+export default function reducer(state: IState = initialState, action: IAction) {
     switch (action.type) {
         case 'SET_ITEM':
             return {

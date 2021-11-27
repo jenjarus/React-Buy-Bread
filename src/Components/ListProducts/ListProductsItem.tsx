@@ -1,10 +1,11 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {deleteItem, setDoneItem, setEdit} from '../../Redux/Actions';
+import {IListProductsItem} from "../../Types/Types";
 
-const ListProductsItem = ({item}) => {
+const ListProductsItem: React.FC<IListProductsItem> = ({item}) => {
     const dispatch = useDispatch();
-    const classColor = ' ' + item.color;
+    const classColor: string = ' ' + item.color;
 
     return (
         <div className="item">

@@ -1,22 +1,23 @@
-import {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {setEdit, setEditItem, setEditProductItem, setProductItem} from '../../Redux/Actions';
 
 import InputColorList from './Color/InputColorList';
 import InputNameProductList from "./NameProduct/InputNameProductList";
+import {IState, IDataItems, IDataProducts} from "../../Types/Types";
 
 const InputEditProduct = () => {
     const dispatch = useDispatch();
 
-    const id = useSelector((store) => store.idEdit); // id изменяемого объекта
-    const items = useSelector((store) => store.items);
-    const products = useSelector((store) => store.products); // Список сохраненных названий продуктов
+    const id: number = useSelector((store: IState) => store.idEdit); // id изменяемого объекта
+    const items: IDataItems[] = useSelector((store: IState) => store.items);
+    const products: IDataProducts[] = useSelector((store: IState) => store.products); // Список сохраненных названий продуктов
     const editItem = items.find(item => item.id === id); // изменяемый объект
 
     const [input, setInput] = useState('');
     const [color, setColor] = useState('');
 
-    const inputRef = useRef();
+    const inputRef = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         if (editItem) {
@@ -25,22 +26,22 @@ const InputEditProduct = () => {
         }
     }, [editItem]);
 
-    const addItem = () => {
+    const addItem = (): void => {
         if (input.trim()) {
-            let newText = input.replace(/\s+/g, ' ');
+            let newText: string = input.replace(/\s+/g, ' ');
             newText = newText.trim();
 
-            editItem.text = newText;
-            editItem.color = color;
+            editItem!.text = newText;
+            editItem!.color = color;
 
-            const newProduct = {
+            const newProduct: IDataProducts = {
                 id: new Date().getTime(),
                 count: 1,
                 color: color,
                 name: newText,
             };
 
-            dispatch(setEditItem(editItem));
+            dispatch(setEditItem(idEditProduct(), editItem!));
             dispatch(setEdit(0, false));
             compareInputProduct() ? dispatch(setEditProductItem(idEditProduct(), editProduct(newText))) : dispatch(setProductItem(newProduct));
         } else {
@@ -48,38 +49,40 @@ const InputEditProduct = () => {
         }
     };
 
-    const clickEnter = (e) => {
-        if (e.keyCode === 13) {
+    const clickEnter = (e: React.KeyboardEvent<HTMLInputElement>): void => {
+        if (e.code === 'Enter') {
             addItem();
         }
     };
 
     // Вставка сохраненного названия продукта
-    const setProduct = (id) => {
+    const setProduct = (id: number): void => {
         const product = products.find(el => el.id === id);
-        setInput(product.name);
-        setColor(product.color);
-        inputRef.current.focus();
+        setInput(product!.name);
+        setColor(product!.color);
+        if(inputRef && inputRef.current) {
+            inputRef.current.focus();
+        }
     };
 
     // Проверка на наличие сохраненного названия продукта
-    const compareInputProduct = () => {
+    const compareInputProduct = (): boolean => {
         const product = products.filter((a) => a.name === input);
         return product.length !== 0;
     };
 
     // id сохраненного названия продукта
-    const idEditProduct = () => {
+    const idEditProduct = (): number => {
         const product = products.filter((a) => a.name === input);
         return product[0].id;
     };
 
     // Изменение объекта сохраненного названия продукта
-    const editProduct = (text) => {
+    const editProduct = (text: string): IDataProducts => {
         const product = products.find((a) => a.name === input);
         return {
-            id: product.id,
-            count: ++product.count,
+            id: product!.id,
+            count: ++product!.count,
             color: color,
             name: text,
         };

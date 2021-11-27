@@ -3,18 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="3607581a-1820-431c-a233-6c6f78a49d4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputColorItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputColorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/InputProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/InputProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProductsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProductsItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/inputEditProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/Color/InputColorItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/Color/InputColorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/InputProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/InputProduct.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts/ListProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts/ListProductsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProductsItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/localStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/localStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -132,7 +138,7 @@
       <workItem from="1637914984473" duration="91000" />
       <workItem from="1637947895422" duration="10765000" />
       <workItem from="1637960867137" duration="366000" />
-      <workItem from="1637997049290" duration="8174000" />
+      <workItem from="1637997049290" duration="24699000" />
     </task>
     <servers />
   </component>

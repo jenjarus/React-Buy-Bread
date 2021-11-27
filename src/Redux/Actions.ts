@@ -1,5 +1,7 @@
 // Добавление продукта в список
-export function setItem(data) {
+import {IDataItems, IDataProducts} from "../Types/Types";
+
+export function setItem(data: IDataItems) {
     return {
         type: 'SET_ITEM',
         item: data,
@@ -7,7 +9,7 @@ export function setItem(data) {
 }
 
 // Вызов изменения продукта из списка
-export function setEdit(id, edit) {
+export function setEdit(id: number, edit: boolean) {
     return {
         type: 'SET_EDIT',
         id: id,
@@ -16,7 +18,7 @@ export function setEdit(id, edit) {
 }
 
 // Изменение продукта из списка
-export function setEditItem(id, data) {
+export function setEditItem(id: number, data: IDataItems) {
     return {
         type: 'SET_EDIT_ITEM',
         id: id,
@@ -25,7 +27,7 @@ export function setEditItem(id, data) {
 }
 
 // Выполнение продукта из списка
-export function setDoneItem(id) {
+export function setDoneItem(id: number) {
     return {
         type: 'SET_DONE_ITEM',
         id: id
@@ -33,7 +35,7 @@ export function setDoneItem(id) {
 }
 
 // Удаление продукта из списка
-export function deleteItem(id) {
+export function deleteItem(id: number) {
     return {
         type: 'DELETE_ITEM',
         id: id,
@@ -41,7 +43,7 @@ export function deleteItem(id) {
 }
 
 // Добавление продукта в список сохраненных названий
-export function setProductItem(data) {
+export function setProductItem(data: IDataProducts) {
     return {
         type: 'SET_PRODUCT_ITEM',
         product: data,
@@ -49,7 +51,7 @@ export function setProductItem(data) {
 }
 
 // Изменение продукта из списка сохраненных названий
-export function setEditProductItem(id, data) {
+export function setEditProductItem(id: number, data: IDataProducts) {
     return {
         type: 'SET_EDIT_PRODUCT_ITEM',
         id: id,

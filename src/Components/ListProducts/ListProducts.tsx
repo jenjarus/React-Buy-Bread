@@ -1,21 +1,25 @@
-import React from "react";
+import React, {ReactElement} from "react";
 import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
+import {IState, IListProducts, IDataItems} from "../../Types/Types";
 import {deleteDoneItems} from '../../Redux/Actions';
 
 import ListProductsItem from "./ListProductsItem";
 
-const ListProducts = ({filter}) => {
+const ListProducts: React.FC<IListProducts> = ({filter}) => {
     const dispatch = useDispatch();
-    const items = useSelector((store) => store.items);
-    let newItems, classDone, emptyItems = '', delDoneItems = '';
+    const items: IDataItems[] = useSelector((store: IState) => store.items);
+    let newItems: IDataItems[],
+        classDone: string,
+        emptyItems: ReactElement | string = '',
+        delDoneItems: ReactElement | string = '';
 
     // Флаг списка продуктов (выполнены продукты или нет)
     if (filter === 'done') {
-        newItems = items.filter(item => item.done === true);
+        newItems = items.filter(item => item.done);
         classDone = ' list-products-bought'
     } else {
-        newItems = items.filter(item => item.done === false);
+        newItems = items.filter(item => !item.done);
         classDone = '';
     }
 

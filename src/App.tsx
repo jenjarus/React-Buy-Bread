@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
+import {IState} from "./Types/Types";
 
 import Header from "./Components/Header";
 import InputProduct from "./Components/Input/InputProduct";
@@ -11,13 +12,13 @@ import './Styles/reset.css';
 import './Styles/styles.scss';
 
 const App = () => {
-    const inputEdit = useSelector((store) => store.inputEdit);
-    const idEdit = useSelector((store) => store.idEdit);
-    const themeDark = useSelector((store) => store.themeDark);
+    const inputEdit: boolean = useSelector((store: IState) => store.inputEdit);
+    const idEdit: number = useSelector((store: IState) => store.idEdit);
+    const themeDark: boolean = useSelector((store: IState) => store.themeDark);
 
     const [viewEdit, setViewEdit] = useState(false);
 
-    const theme = themeDark === true ? ' theme-dark' : '';
+    const theme: string = themeDark ? ' theme-dark' : '';
 
     useEffect(() => {
         setViewEdit(inputEdit);
@@ -27,7 +28,7 @@ const App = () => {
         <div className={"body" + theme}>
             <Header/>
             {viewEdit ? <InputEditProduct/> : <InputProduct/>}
-            <ListProducts/>
+            <ListProducts filter={'none'}/>
             <ListProducts filter={'done'}/>
             <Footer/>
         </div>

@@ -1,5 +1,8 @@
-const InputColorItem = ({name, set, active}) => {
-    let classActive = '';
+import React from "react";
+import {IInputColorItem} from "../../../Types/Types";
+
+const InputColorItem: React.FC<IInputColorItem> = ({name, set, active}) => {
+    let classActive: string = '';
 
     if (active === name) { classActive = ' active'; }
 

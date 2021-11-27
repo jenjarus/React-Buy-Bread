@@ -1,14 +1,17 @@
+import React from "react";
 import {useSelector} from "react-redux";
+import {IState, IDataProducts, IInputNameProductList} from "../../../Types/Types";
+
 import InputNameProductItem from './InputNameProductItem'
 
-const InputNameProductList = ({input, setProduct}) => {
-    const products = useSelector((store) => store.products);
+const InputNameProductList: React.FC<IInputNameProductList> = ({input, setProduct}) => {
+    const products: IDataProducts[] = useSelector((store: IState) => store.products);
 
     // Сортировка по убыванию количества вызовов продукта
-    const sortCount = (prev, next) => next.count - prev.count;
+    const sortCount = (prev: IDataProducts, next: IDataProducts): number => next.count - prev.count;
 
     // Сначала вывод сохраненных продуктов которые начинаются на input...
-    let newArr = products.filter((a) => a.name.startsWith(input)).sort(sortCount);
+    let newArr: IDataProducts[] = products.filter((a) => a.name.startsWith(input)).sort(sortCount);
     // Потом которые имеют в теле input
     newArr.push(...products.filter((a) => a.name.includes(input) && !a.name.startsWith(input)).sort(sortCount));
     // Не выводить если input пустой
