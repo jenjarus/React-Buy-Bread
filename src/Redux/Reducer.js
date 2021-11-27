@@ -38,6 +38,21 @@ export default function reducer(state, action) {
                 inputEdit: action.id === state.idEdit ? false : state.inputEdit,
                 idEdit: action.id === state.idEdit ? 0 : state.idEdit,
             };
+        case 'SET_PRODUCT_ITEM':
+            return {
+                ...state,
+                products: [...state.products, action.product],
+            };
+        case 'SET_EDIT_PRODUCT_ITEM':
+            return {
+                ...state,
+                products: [...state.products.map(item => {
+                    if (item.id === action.id) {
+                        item = action.product
+                    }
+                    return item;
+                })]
+            };
         case 'DELETE_DONE_ITEMS':
             return {
                 ...state,
@@ -46,7 +61,7 @@ export default function reducer(state, action) {
         case 'SET_THEME':
             return {
                 ...state,
-                themeDark: state.themeDark === true ? false : true,
+                themeDark: state.themeDark !== true,
             };
         default:
             return state;

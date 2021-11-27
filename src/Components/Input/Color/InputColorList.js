@@ -1,4 +1,4 @@
-import InputColorItem from './InputColorItem'
+import InputColorItem from './InputColorItem';
 
 const InputColorList = ({set, color}) => {
     const colorNameItem = ['transparent', 'yellow', 'red', 'blue', 'green', 'orange'];

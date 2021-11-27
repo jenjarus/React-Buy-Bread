@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 
 import Header from "./Components/Header";
-import InputProduct from "./Components/InputProduct";
-import ListProducts from "./Components/ListProducts";
-import InputEditProduct from "./Components/inputEditProduct";
+import InputProduct from "./Components/Input/InputProduct";
+import ListProducts from "./Components/ListProducts/ListProducts";
+import InputEditProduct from "./Components/Input/inputEditProduct";
 import Footer from "./Components/Footer";
 
 import './Styles/reset.css';
@@ -14,7 +14,9 @@ const App = () => {
     const inputEdit = useSelector((store) => store.inputEdit);
     const idEdit = useSelector((store) => store.idEdit);
     const themeDark = useSelector((store) => store.themeDark);
+
     const [viewEdit, setViewEdit] = useState(false);
+
     const theme = themeDark === true ? ' theme-dark' : '';
 
     useEffect(() => {

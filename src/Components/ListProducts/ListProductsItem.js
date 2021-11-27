@@ -1,10 +1,10 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteItem, setDoneItem, setEdit} from '../Redux/Actions';
+import {deleteItem, setDoneItem, setEdit} from '../../Redux/Actions';
 
 const ListProductsItem = ({item}) => {
     const dispatch = useDispatch();
-    const classColor = ' '+ item.color;
+    const classColor = ' ' + item.color;
 
     return (
         <div className="item">
@@ -15,4 +15,4 @@ const ListProductsItem = ({item}) => {
         </div>)
 };
 
-export default ListProductsItem
+export default ListProductsItem;

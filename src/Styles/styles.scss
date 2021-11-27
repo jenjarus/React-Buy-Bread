@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 $base-font: 'Roboto', sans-serif;
 
 $background-color: #404040;
@@ -42,10 +43,12 @@ $orange-color: #E57542;
   color: #fff;
   cursor: pointer;
   transition: background 0.3s;
+
   &:hover {
     background: $background-color;
   }
 }
+
 .input {
   width: 100%;
   padding: 10px 20px;
@@ -75,7 +78,7 @@ header {
   background: $background-color;
   color: #fff;
 
-  .container{
+  .container {
     display: flex;
     align-items: center;
   }
@@ -91,6 +94,7 @@ header {
     height: 40px;
     background: url("../Images/theme-moon.svg") no-repeat center / 24px;
     cursor: pointer;
+
     &:hover {
       opacity: 0.7;
     }
@@ -117,6 +121,7 @@ header {
     border-radius: 5px;
     @include color-backgrounds();
   }
+
   .color-dropdown {
     display: none;
     position: absolute;
@@ -132,6 +137,7 @@ header {
     overflow: hidden;
     transition: .3s all;
     z-index: 1;
+
     &:before {
       content: '';
       display: block;
@@ -142,6 +148,7 @@ header {
       left: 0;
     }
   }
+
   &:hover {
     .color-dropdown {
       display: block;
@@ -158,11 +165,27 @@ header {
     margin: 5px;
     cursor: pointer;
     @include color-backgrounds();
+
     &.active {
       background-image: url("../Images/icon-check.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 16px;
+    }
+  }
+}
+
+.input-product-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px -10px 0;
+
+  .item {
+    @include color-backgrounds();
+
+    &:hover {
+      background: $background-color;
     }
   }
 }
@@ -184,7 +207,7 @@ header {
       border-bottom: none;
     }
 
-    &:hover{
+    &:hover {
       .icon {
         opacity: 1;
         overflow: visible;
@@ -198,6 +221,7 @@ header {
       border-radius: 6px;
       vertical-align: middle;
       @include color-backgrounds();
+
       &.transparent {
         background: transparent;
       }
@@ -214,6 +238,7 @@ header {
     .icon {
       opacity: 0;
       overflow: hidden;
+
       &:hover {
         opacity: .7;
       }
@@ -224,6 +249,7 @@ header {
     position: relative;
     flex-grow: 1;
     background: $transparent-color;
+
     &:before {
       content: '';
       display: block;
@@ -259,15 +285,19 @@ header {
   cursor: pointer;
   vertical-align: middle;
   transition: .3s all;
+
   &:hover {
     opacity: .7;
   }
+
   &.icon-edit {
     background: url("../Images/icon-edit.svg") center / cover;
   }
+
   &.icon-delete {
     background: url("../Images/icon-delete.svg") center / cover;
   }
+
   &.icon-close {
     background: url("../Images/icon-close.svg") center / cover;
   }
@@ -291,6 +321,7 @@ footer {
   padding: 15px 0;
   background: $background-color;
   color: #fff;
+
   .copyright {
     text-align: center;
   }
@@ -299,12 +330,15 @@ footer {
 .theme-dark {
   background: $background-color;
   color: #fff;
+
   .input {
     background-color: $transparent-color;
   }
+
   .list-products.list-products-bought {
     color: #000;
   }
+
   .theme-btn {
     background: url("../Images/theme-sun.svg") no-repeat center / 24px;
   }

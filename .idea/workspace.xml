@@ -5,11 +5,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputColorItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputColorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/InputProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/InputProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ListProductsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProductsItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/inputEditProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/localStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/localStorage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +46,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Styles" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,12 +61,15 @@
     <property name="ts.external.directory.path" value="D:\Projects\buy-bread\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\buy-bread\src\Components\ListProducts" />
+      <recent name="D:\Projects\buy-bread\src\Components\Input" />
+      <recent name="D:\Projects\buy-bread\src\Components\Input\NameProduct" />
+      <recent name="D:\Projects\buy-bread\src\Components\Input\Color" />
+      <recent name="D:\Projects\buy-bread\src\Images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\buy-bread\src\Styles" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\buy-bread\src\Images" />
-      <recent name="D:\Projects\buy-bread\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,7 +127,12 @@
       <workItem from="1637775571883" duration="11936000" />
       <workItem from="1637828512197" duration="1056000" />
       <workItem from="1637854496268" duration="12011000" />
-      <workItem from="1637871144796" duration="940000" />
+      <workItem from="1637871144796" duration="1671000" />
+      <workItem from="1637874813168" duration="1427000" />
+      <workItem from="1637914984473" duration="91000" />
+      <workItem from="1637947895422" duration="10765000" />
+      <workItem from="1637960867137" duration="366000" />
+      <workItem from="1637997049290" duration="8174000" />
     </task>
     <servers />
   </component>
