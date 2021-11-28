@@ -41,7 +41,7 @@ const InputEditProduct = () => {
                 name: newText,
             };
 
-            dispatch(setEditItem(idEditProduct(), editItem!));
+            dispatch(setEditItem(editItem!));
             dispatch(setEdit(0, false));
             compareInputProduct() ? dispatch(setEditProductItem(idEditProduct(), editProduct(newText))) : dispatch(setProductItem(newProduct));
         } else {

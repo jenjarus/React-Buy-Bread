@@ -18,10 +18,9 @@ export function setEdit(id: number, edit: boolean) {
 }
 
 // Изменение продукта из списка
-export function setEditItem(id: number, data: IDataItems) {
+export function setEditItem(data: IDataItems) {
     return {
         type: 'SET_EDIT_ITEM',
-        id: id,
         item: data,
     }
 }

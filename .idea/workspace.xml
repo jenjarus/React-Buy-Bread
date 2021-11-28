@@ -3,24 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3607581a-1820-431c-a233-6c6f78a49d4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/Color/InputColorItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/Color/InputColorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Color/InputColorList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/InputProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/InputProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/NameProduct/InputNameProductList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts/ListProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProducts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ListProducts/ListProductsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListProducts/ListProductsItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/State.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/State.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/localStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/localStorage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +80,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -104,6 +100,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -139,6 +140,8 @@
       <workItem from="1637947895422" duration="10765000" />
       <workItem from="1637960867137" duration="366000" />
       <workItem from="1637997049290" duration="24940000" />
+      <workItem from="1638029269923" duration="75000" />
+      <workItem from="1638110392317" duration="1476000" />
     </task>
     <servers />
   </component>

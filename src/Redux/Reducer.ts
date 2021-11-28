@@ -18,7 +18,7 @@ export default function reducer(state: IState = initialState, action: IAction) {
             return {
                 ...state,
                 items: [...state.items.map(item => {
-                    if (item.id === action.id) {
+                    if (item.id === action.item.id) {
                         item = action.item
                     }
                     return item;
