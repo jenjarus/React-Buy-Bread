@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3607581a-1820-431c-a233-6c6f78a49d4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/inputEditProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +138,9 @@
       <workItem from="1637960867137" duration="366000" />
       <workItem from="1637997049290" duration="24940000" />
       <workItem from="1638029269923" duration="75000" />
-      <workItem from="1638110392317" duration="1476000" />
+      <workItem from="1638110392317" duration="3416000" />
+      <workItem from="1638174130637" duration="7000" />
+      <workItem from="1638266852107" duration="19000" />
     </task>
     <servers />
   </component>
